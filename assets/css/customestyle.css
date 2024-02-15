@@ -1,0 +1,160 @@
+.new_icons_1 {
+    padding-left: 2px;
+    position: fixed;
+    z-index: 10;
+    bottom: 80px;
+    left: 5px
+    
+}
+
+.new_icons_2 {
+    padding-left: 2px;
+    font-size: 13px;
+    position: fixed;
+    bottom: 25px;
+    z-index: 10;
+    left: 5px
+}
+.new_icons_2 a i {
+    border-radius: 50%;
+    background: #ea793f;
+    color: #fff;
+    height: 41px;
+    width: 41px;
+    font-size: 15px;
+    border: 2px solid #fbfbfb;
+    line-height: 37px;
+    text-align: center;
+    animation-name: zoom-in-zoom-out;
+}
+
+.new_icons_1 a i {
+    color: #fff;
+    border-radius: 50%;
+    border: 2px solid #fbfbfb;
+    background: #ea793f;
+    height: 42px;
+    width: 42px;
+    line-height: 39px;
+    font-size: 24px;
+    text-align: center;
+    animation-name: zoom-in-zoom-out;
+}
+
+
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(1, 1)
+    }
+
+    50% {
+        transform: scale(1.5, 1.5)
+    }
+
+    100% {
+        transform: scale(1, 1)
+    }
+}
+
+
+/* Footer gallery css  */
+
+.sidebar-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 11px;
+    max-width: 308px;
+    height: 200px;
+}
+
+.sidebar-gallery .gallery-thumb {
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+}
+
+.sidebar-gallery .gallery-thumb img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.colour{
+    color: #ea793f;
+}
+.padding{
+    padding-top:100px;
+}
+.margin-bnone{
+    margin-bottom: none !important;
+}
+
+/* back to top*/
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color:#ea793f;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #eb9500;
+}
+
+/* Loader */
+
+.preloader {
+    position: fixed;
+    background-color:#4a2424;
+    background-position: center center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9991;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: center;
+}
+.preloader__image {
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: flipInY;
+    animation-name: flipInY;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 250px auto;
+    width: 100%;
+    height: 100%;
+}
+
+.diverge-logo-1{
+    width: 200px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.border-radius{
+    border-radius: 20px;
+}
